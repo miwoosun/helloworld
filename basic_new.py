@@ -104,8 +104,8 @@ print("I'm Python. Nice to meet you!")
 # 可以查看控制流程一节来了解如何异常处理
 # some_other_var  # 抛出 NameError
 
-# if 语句可以作为表达式来使用
-"yahoo!" if 3 > 2 else 2  # => "yahoo!"
+# if 语句可以作为表达式来使用  # => "yahoo!"
+"yahoo!" if 3 > 2 else 2
 
 # 列表用来保存序列
 li = []
