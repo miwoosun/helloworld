@@ -6,7 +6,6 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
 
-
 from sys import stdout
 
 if __name__ == '__main__':
