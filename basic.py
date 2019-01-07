@@ -6,21 +6,46 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
 
-from sys import stdout
+ # operators 
+if 5 > 2:
+  print("Five is greater than two!")
+x = 5
+y = "John"
+z = str(abs(x)) + y
+print(x)
+print(~x)
+print(~2)
+print(3**3)
+print("the result is %s" %z)
 
-if __name__ == '__main__':
-    A_VAR = int(input('输入四个数字:\n'))
-    A_OUT = []
-    A_OUT.append(A_VAR % 10)
-    A_OUT.append(A_VAR % 100 / 10)
-    A_OUT.append(A_VAR % 1000 / 100)
-    A_OUT.append(A_VAR / 1000)
+# 字符串操作
+sa = "Welcome! Are you completely new to programming? If not then we presume you will be looking for information about why and how to get started with Python.Fortunately an experienced programmer in any programming language (whatever it may be) can pick up Python very quickly. It is also easy for beginners to use and learn, so jump in!"
 
-    for i in range(4):
-        A_OUT[i] += 5
-        A_OUT[i] %= 10
-    for i in range(2):
-        A_OUT[i], A_OUT[3 - i] = A_OUT[3 - i], A_OUT[i]
-    for i in range(3, -1, -1):
-        stdout.write(str(A_OUT[i]))
-        
+print("Enter your name:")
+#x = input()
+print("Hello, " + y)
+
+
+thislist = list(("apple", "banana", "cherry"))
+print(thislist)
+print(thislist[1])
+print(len(thislist))
+
+for x in thislist:
+  print(x)
+that_fruit = "pear"
+if that_fruit in thislist:
+    print("Yes, %s is in the fruits list" %that_fruit)
+else:
+    print("No, %s is not in the fruits list" %that_fruit)
+
+#thislist.clear()
+print(thislist.count("apple"))
+
+
+thisdict =	{
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+print(thisdict)       
